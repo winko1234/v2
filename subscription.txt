@@ -1,0 +1,12 @@
+# WinNet-Speed Subscription — Test File
+# ဒီ file ကို GitHub မှာ ပြင်တာနဲ့ user တွေ refresh လုပ်ရင် အသစ်ရတယ်
+# လိုင်းတစ်ကြောင်း = server တစ်ခု
+
+# --- TEST: REALITY server (အစစ်ဖြစ်တာနဲ့ ဒီဟာတွေကို အစားထိုးရမယ်) ---
+vless://e54f6f9e-1f5d-4b4a-8f0f-3a2b1c9d8e7f@203.0.113.10:443?encryption=none&security=reality&type=tcp&flow=xtls-rprx-vision&sni=www.apple.com&fp=chrome&pbk=REALITY_PUBLIC_KEY_PLACEHOLDER&sid=8f1a2b3c&spx=%2F#WinNet-Test-01
+
+# --- TEST: VLESS+WS+CDN (Cloudflare နောက်မှာ ဝှက်ထားတဲ့ server) ---
+vless://e54f6f9e-1f5d-4b4a-8f0f-3a2b1c9d8e7f@your-domain.com:443?encryption=none&security=tls&type=ws&host=your-domain.com&path=%2Fws#WinNet-Test-02
+
+# --- TEST: VMess (အရေးပေါ် fallback) ---
+vmess://eyJ2IjoiMiIsInBzIjoiV2luTmV0LVRlc3QtMDMiLCJhZGQiOiIyMDMuMC4xMTMuMTAiLCJwb3J0IjoiNDQzIiwiYWlkIjoiMCIsInNjeSI6ImF1dG8iLCJuZXQiOiJ0Y3AiLCJ0eXBlIjoibm9uZSIsInRscyI6IiIsInBhdGgiOiIiLCJ1dWlkIjoiZTRiNmY5ZTUtMWY1ZC00YjRhLThmMGYtM2EyYjFjOWQ4ZTdmIn0=
